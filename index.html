@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="display">
+  <header>
+    <div class="logo">
+      <h2>Warrior's Choice</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#body">Home</a></li>
+        <li><a href="#" id="cart">Cart (0)</a></li>
+        <li><a href="#">Log-In</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#footer">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="main-search-bar">
+      <input type="text" name="" id="input" placeholder="What are you looking for?">
+    </div>
+    <div class="main-container">
+      <nav id="product-nav">
+        <ul id="product-nav-list"></ul>
+      </nav>
+      <div class="products-list-container">
+      </div>
+    </div>
+    <div class="cartContainer">
+      <h1>shopping cart</h1>
+      <div class="cartItems">
+        <div class="cartItem">
+          <img
+            src="https://assets.basspro.com/image/list/fn_select:jq:first(.%5B%5D%7Cselect(.public_id%20%7C%20endswith(%22main%22)))/1303005.json?$Prod_PLPThumb$https://example.com/images/glock17.jpg"
+            alt="Item 1" class="itemImage">
+          <div class="itemDetails">
+            <p class="itemName">Glock 17</p>
+            <p class="itemPrice">500$</p>
+            <div class="itemQuantity">
+              <input type="number" value="1" class="quantityInput" min="1">
+              <button>Remove</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cartBtns">
+        <button class="cartClose">Close</button>
+        <button class="ClassCheckOut">Check Out</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="contact">
+      <p>Contact us: beqaakhvlediani1@gmail.com</p>
+    </div>
+    <div class="social">
+      <ul>
+        <li><a href=""><img src="/images/facebook.png" alt=""></a></li>
+        <li><a href=""><img src="/images/instagram-logo.png" alt=""></a></li>
+        <li><a href=""><img src="/images/threads.png" alt=""></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
